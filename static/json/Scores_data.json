@@ -1,0 +1,38 @@
+{
+  "headerData": {
+    "headerTitle": "Scores d'évaluation et classifications",
+    "headerTitleColor": "#ffffff",
+    "headerColor": "#731639",
+    "headerLogo": ""
+  },
+  "entries": [
+    {
+      "id": "imc",
+      "title": "Exemple : Calcul de l'IMC",
+      "link": "imc",
+      "pathImage": "",
+      "entries": []
+    },
+    {
+      "id": "VSM",
+      "title": "Autre exemple : Recherche d'anémie foetale par la mesure de la VSM",
+      "link": "vsm",
+      "pathImage": "",
+      "entries": []
+    },
+    {
+      "id": "herman",
+      "title": "Score de Herman",
+      "link": "herman",
+      "pathImage": "",
+      "entries": []
+    },
+    {
+      "id": "bishop",
+      "title": "Score de Bishop",
+      "link": "bishop",
+      "pathImage": "",
+      "entries": []
+    }
+  ]
+}

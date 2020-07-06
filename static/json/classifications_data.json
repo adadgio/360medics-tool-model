@@ -1,0 +1,45 @@
+{
+  "headerData": {
+    "headerTitle": "Classifications gynécologiques : scores TNM et FIGO",
+    "headerTitleColor": "#ffffff",
+    "headerColor": "#9e1f4e",
+    "headerLogo": ""
+  },
+  "entries": [
+    {
+      "id": "myomes",
+      "title": "Myomes FIGO",
+      "link": "myomes-figo",
+      "pathImage": "",
+      "entries": []
+    },
+    {
+      "id": "endometre",
+      "title": "Endomètre FIGO",
+      "link": "endometre-figo",
+      "pathImage": "",
+      "entries": []
+    },
+    {
+      "id": "ovaire",
+      "title": "Ovaires TNM/FIGO",
+      "link": "ovaire",
+      "pathImage": "",
+      "entries": []
+    },
+    {
+      "id": "sein",
+      "title": "Sein TNM",
+      "link": "sein-tnm",
+      "pathImage": "",
+      "entries": []
+    },
+    {
+      "id": "col-uterin",
+      "title": "Col Utérin TNM/FIGO",
+      "link": "col-uterin",
+      "pathImage": "",
+      "entries": []
+    }
+  ]
+}
