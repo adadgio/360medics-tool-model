@@ -1,11 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-    </div>
+    <Header></Header>
     <router-view/>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from "vue";
+import Header from "@/components/Header.vue";
+
+export default Vue.extend({
+  name: "App",
+  components: { Header },
+  mounted() {
+    //hhip
+  },
+});
+</script>
 
 <style>
 #app {
