@@ -1,25 +1,98 @@
 {
     "header": {
-        "title": "Hello world"
+        "title": "Your Template"
     },
     "entries": {
-       "entry1": {
+        "entry1": {
             "id": "entry1",
             "title": "Score en obstétrique",
             "items": [
                 {
                     "id": "item1",
                     "title": "Entry 1"
+                },
+                {
+                    "id": "item2",
+                    "title": "Entry 2"
+                },
+                {
+                    "id": "item3",
+                    "title": "Entry 3"
+                },
+                {
+                    "id": "item4",
+                    "title": "Entry 4"
                 }
             ]
         },
         "entry2": {
             "id": "entry2",
-            "title": "Lalala ",
+            "title": "Many cool test",
             "items": [
                 {
-                    "id": "item21",
-                    "title": "Entry 2.1"
+                    "id": "test1",
+                    "title": "Awesome Test"
+                },
+                {
+                    "id": "test2",
+                    "title": "Super Awesome Test"
+                },
+                {
+                    "id": "test3",
+                    "title": "ULTRA Awesome Test"
+                },
+                {
+                    "id": "test4",
+                    "title": "OMEGA Awesome Test"
+                }
+            ]
+        },
+        "entry3": {
+            "id": "entry3",
+            "title": "Compte Rendu d'Opération",
+            "items": [
+                {
+                    "id": "cro1",
+                    "title": "Opération rapide"
+                },
+                {
+                    "id": "cro2",
+                    "title": "Opération difficile"
+                },
+                {
+                    "id": "cro3",
+                    "title": "Opération très difficile"
+                },
+                {
+                    "id": "cro4",
+                    "title": "Opération désastreuse..."
+                }
+            ]
+        },
+        "entry4": {
+            "id": "entry4",
+            "title": "Imagerie médicale",
+            "items": [
+                {
+                    "id": "1erT",
+                    "title": "Exemple: Echographie 1er Trimestre",
+                    "link": "/img/",
+                    "pathImage": "../static/images/CE/1erT.png",
+                    "entries": []
+                },
+                {
+                    "id": "2emeT",
+                    "title": "Exemple: Echographie 2ème Trimestre",
+                    "link": "/img/",
+                    "pathImage": "../static/images/CE/2emeT.png",
+                    "entries": []
+                },
+                {
+                    "id": "3emeT",
+                    "title": "Exemple: Echographie 3ème Trimestre",
+                    "link": "/img/",
+                    "pathImage": "../static/images/CE/3emeT.png",
+                    "entries": []
                 }
             ]
         }

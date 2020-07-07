@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
 import EntriesListPage from "../views/EntriesListPage.vue";
-
+import Imagerie from '../views/Imagerie.vue'
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
@@ -16,6 +16,11 @@ const routes: Array<RouteConfig> = [
       name: "EntriesListPage",
       component: EntriesListPage,
   },
+  {
+    path: "/img/:id",
+    name: 'Imagerie',
+    component: Imagerie
+  }
 ];
 
 const router = new VueRouter({

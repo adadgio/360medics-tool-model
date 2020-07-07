@@ -1,6 +1,8 @@
 <template>
     <div class="header">
-        {{title}}
+      <img :src="logo" @click="goBack" style="cursor:pointer">
+       <h2> {{title}}</h2>
+       
     </div>
 </template>
 
@@ -12,20 +14,42 @@ export default Vue.extend({
   name: "Header",
   data() {
     return {
-      title: null
+      title: null,
+      logo: require('@/assets/logo.jpg')
     } as any;
   },
   mounted() {
     // hop
     this.title = JsonImport.getValue('header.title')
   },
+  methods : {
+      goBack: function() {
+      this.$router.push("/");
+    }
+  }
 });
 </script>
 
 <style scoped>
 .header {
-    height: 70px;
+    height: 85px;
     color: white;
-    background: red;
+    background: rgb(179, 35, 89);;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+    justify-content: space-between;
+}
+.header img {
+  height: 70px;
+  margin-left: 1rem;
+  padding-top: 1rem;
+  float: left;
+}
+.header h2 {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 </style>
