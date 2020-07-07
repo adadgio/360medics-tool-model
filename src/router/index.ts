@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
 import EntriesListPage from "../views/EntriesListPage.vue";
-import Imagerie from '../views/Imagerie.vue'
+import ItemPage from '../views/ItemPage.vue'
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
@@ -12,14 +12,14 @@ const routes: Array<RouteConfig> = [
     component: Home,
   },
   {
-    path: "/list/:id",
+    path: "/list/:eid",
       name: "EntriesListPage",
       component: EntriesListPage,
   },
   {
-    path: "/img/:id",
-    name: 'Imagerie',
-    component: Imagerie
+    path: "/list/:eid/item/:iid",
+    name: 'ItemPage',
+    component: ItemPage
   }
 ];
 

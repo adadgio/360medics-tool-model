@@ -49,52 +49,25 @@
         },
         "entry3": {
             "id": "entry3",
-            "title": "Compte Rendu d'Opération",
-            "items": [
-                {
-                    "id": "cro1",
-                    "title": "Opération rapide"
-                },
-                {
-                    "id": "cro2",
-                    "title": "Opération difficile"
-                },
-                {
-                    "id": "cro3",
-                    "title": "Opération très difficile"
-                },
-                {
-                    "id": "cro4",
-                    "title": "Opération désastreuse..."
-                }
-            ]
+            "title": "Compte Rendu d'Opération"
         },
         "entry4": {
             "id": "entry4",
             "title": "Imagerie médicale",
-            "items": [
-                {
-                    "id": "1erT",
+            "items": {
+                "item1": {
+                    "id": "item1",
                     "title": "Exemple: Echographie 1er Trimestre",
-                    "link": "/img/",
-                    "pathImage": "../static/images/CE/1erT.png",
-                    "entries": []
+                    "link": "http://360medics.com",
+                    "page": false
                 },
-                {
-                    "id": "2emeT",
+                "item2": {
+                    "id": "item2",
                     "title": "Exemple: Echographie 2ème Trimestre",
-                    "link": "/img/",
-                    "pathImage": "../static/images/CE/2emeT.png",
-                    "entries": []
-                },
-                {
-                    "id": "3emeT",
-                    "title": "Exemple: Echographie 3ème Trimestre",
-                    "link": "/img/",
-                    "pathImage": "../static/images/CE/3emeT.png",
-                    "entries": []
+                    "link": false,
+                    "page": "page-1.1.html"
                 }
-            ]
+            }
         }
     }
 }

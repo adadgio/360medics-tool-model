@@ -1,23 +1,16 @@
 <template>
   <div class="list-view">
-        <div v-for="titre in items" :key="titre.id" class="list group">
-            <router-link v-if=" titre.link"
-            style="cursor:pointer"
-            tag="li"
-            class="list-group-item"
-            :to="'/img/' + titre.id"
-            >{{ titre.title }}</router-link
-          >
-          <router-link v-else
-          style="cursor:pointer"
-            tag="li"
-            class="list-group-item"
-            :to="'/list/'+ titre.id"
-            >{{ titre.title }}</router-link
-          >
+        <div v-for="item in items" :key="item.id" class="list group">
+            <router-link v-if="!item.link"
+                style="cursor:pointer"
+                tag="li"
+                class="list-group-item"
+                :to="'/list/'+entry.id+'/item/'+item.id"
+            >{{ item.title }} <small>{{entry.id}}->{{item.id}}</small></router-link>
+            
+            <a v-else :href="item.link" target="_blank">{{ item.title }} <small>{{entry.id}}->{{item.id}}</small></a>
         </div>
     </div>
-
 </template>
 
 <script lang="ts">
@@ -31,12 +24,15 @@ export default Vue.extend({
     return {};
   },
   computed: {
+    entry() {
+        return JsonImport.getValue(`entries.${this.$route.params.eid}`)
+    },
     items() {
-      return JsonImport.getValue(`entries.${this.$route.params.id}.items`);
+      return JsonImport.getValue(`entries.${this.$route.params.eid}.items`)
     },
   },
   mounted() {
-    console.log(this.$route.params.id);
+    console.log(this.$route.params.eid);
   },
 });
 </script>
