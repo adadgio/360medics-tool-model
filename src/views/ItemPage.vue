@@ -2,7 +2,7 @@
   <div class="block">
     <div class="card" style="width: 18rem;">
       <div   class="card-body">
-        <h5 class="card-title">ssdfsdf</h5>
+        <h5 class="card-title">Trruc</h5>
         <p class="card-text">
           <img :src="'@/assets/1erT.png'"/>
           <iframe :src="'@/assets/mes-pages/'+item.page"></iframe>
