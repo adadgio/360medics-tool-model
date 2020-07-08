@@ -1,48 +1,44 @@
 <template>
-  <div class="block">
-    <div class="card" style="width: 18rem;">
-      <div   class="card-body">
-        <h5 class="card-title">Trruc</h5>
-        <p class="card-text">
-          <img :src="'@/assets/1erT.png'"/>
-          <iframe :src="'@/assets/mes-pages/'+item.page"></iframe>
-        </p>
-        <a @click="back" class="btn btn-primary">Retour à la liste</a>
-      </div>
-    </div>
+  <div v-if="componentName != undefined" class="block" >
+    <component v-bind:is="componentFile"> </component>
+    <a @click="back" class="btn btn-primary">Retour à la liste</a>
   </div>
+  <div v-else class="block">
+        <a @click="back" class="btn btn-primary">Retour à la liste</a>
+    </div>
 </template>
 <script lang="ts">
 import Vue from "vue";
 import { JsonImport } from "@/service/json-import";
-
 export default Vue.extend({
   name: "ItemPage",
+
   components: {},
   data() {
     return {
-      
+      componentName: undefined,
     };
   },
   computed: {
-    item() {
-      return JsonImport.getValue(`entries.${this.$route.params.eid}.items.${this.$route.params.iid}`);
-    },
+    componentFile() {
+      return () => import(`@/assets/mes-pages/${this.componentName}`);
+    }
   },
   methods: {
     back() {
-      this.$router.push(`/list/.${this.$route.params.eid}`);
+      this.$router.push(`/list/${this.$route.params.eid}`);
     },
+  },
+  created () {
+    this.componentName = JsonImport.getValue(
+      `entries.${this.$route.params.eid}.items.${this.$route.params.iid}.page`
+    );
   },
 });
 </script>
 <style scoped>
-.card {
-  width: 600px;
-  align-items: center;
-}
 .block {
   display: inline-block;
-    margin-top: 3%;
+  margin-top: 3%;
 }
 </style>

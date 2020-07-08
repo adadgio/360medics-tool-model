@@ -59,13 +59,26 @@
                     "id": "item1",
                     "title": "Exemple: Echographie 1er Trimestre",
                     "link": "http://360medics.com",
+
                     "page": false
                 },
                 "item2": {
                     "id": "item2",
-                    "title": "Exemple: Echographie 2ème Trimestre",
+                    "title": "Exemple: Ma première page",
                     "link": false,
-                    "page": "page-1.1.html"
+                    "page": "page-1-1.vue"
+                },
+                "item3": {
+                    "id": "item3",
+                    "title": "Exemple: Ma seconde page",
+                    "link": false,
+                    "page": "page-1-2.vue"
+                },
+                "item4": {
+                    "id": "item4",
+                    "title": "Exemple: Ma troisième page",
+                    "link": false,
+                    "page": "page-1-3.vue"
                 }
             }
         }

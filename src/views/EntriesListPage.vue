@@ -5,8 +5,10 @@
                 style="cursor:pointer"
                 tag="li"
                 class="list-group-item"
+                :pageLoad="item.page"
                 :to="'/list/'+entry.id+'/item/'+item.id"
-            >{{ item.title }} <small>{{entry.id}}->{{item.id}}</small></router-link>
+            >{{ item.title }} <small>{{entry.id}}->{{item.id}} + {{item.page}}</small></router-link>
+            
             
             <a v-else :href="item.link" target="_blank">{{ item.title }} <small>{{entry.id}}->{{item.id}}</small></a>
         </div>
@@ -21,7 +23,9 @@ export default Vue.extend({
   name: "Home",
   components: {},
   data() {
-    return {};
+    return {
+      pageLoad: ""
+    } as any;
   },
   computed: {
     entry() {
@@ -32,7 +36,8 @@ export default Vue.extend({
     },
   },
   mounted() {
-    console.log(this.$route.params.eid);
+    console.log(this.$route.params.eid)
+    console.log(JsonImport.getValue(`entries.${this.$route.params.eid}.items`));
   },
 });
 </script>
