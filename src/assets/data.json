@@ -49,7 +49,27 @@
         },
         "entry3": {
             "id": "entry3",
-            "title": "Compte Rendu d'Opération"
+            "title": "Compte Rendu d'Opération",
+            "items": {
+                "item1": {
+                    "id": "item1",
+                    "title": "Mon compte rendu opératoire n° 1",
+                    "link": false,
+                    "page": "exemple-cro.vue"
+                },
+                "item2": {
+                    "id": "item2",
+                    "title": "Compte rendu opératoire externe",
+                    "link": "http://campus.cerimes.fr/chirurgie-generale/enseignement/compterendu/site/html/cours.pdf",
+                    "page": false
+                },
+                "item3": {
+                    "id": "item3",
+                    "title": "Compte Rendu opératoire n°2",
+                    "link": false,
+                    "page": "exemple-cro2.vue"
+                }
+            }
         },
         "entry4": {
             "id": "entry4",
