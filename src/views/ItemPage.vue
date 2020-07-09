@@ -1,12 +1,12 @@
 <template>
-  <div v-if="componentName != undefined" class="block" >
+  <div v-if="componentName != undefined" class="block">
     <component v-bind:is="componentFile"> </component>
     <a @click="back" class="btn btn-primary">Retour à la liste</a>
   </div>
   <div v-else class="block">
-        <h2> TO BUILD </h2>
-        <a @click="back" class="btn btn-primary">Retour à la liste</a>
-    </div>
+    <h2>TO BUILD</h2>
+    <a @click="back" class="btn btn-primary">Retour à la liste</a>
+  </div>
 </template>
 <script lang="ts">
 import Vue from "vue";
@@ -23,17 +23,18 @@ export default Vue.extend({
   computed: {
     componentFile() {
       return () => import(`@/assets/mes-pages/${this.componentName}`);
-    }
+    },
   },
   methods: {
     back() {
       this.$router.push(`/list/${this.$route.params.eid}`);
     },
   },
-  created () {
+  created() {
     this.componentName = JsonImport.getValue(
       `entries.${this.$route.params.eid}.items.${this.$route.params.iid}.page`
-    );
+    )
+    // console.log(this.componentName);
   },
 });
 </script>
