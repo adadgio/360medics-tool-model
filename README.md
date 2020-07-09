@@ -1,7 +1,6 @@
 # 360medics-tool-model - 360 Medics - EN CONSTRUCTION
 
-Dans le cadre du projet de fin de formation de la Coding Academy, nous avons réalisé un site permettant de planifier des activités avec ses amis.
-
+DESCRIPTION 
 ## Prérequis et installation
 
 Afin de pouvoir utiliser cette application , il est nécessaire d'installer préalablement les éléments suivants :
