@@ -13,7 +13,6 @@
       arcu fermentum nec. Pellentesque laoreet magna ex, non malesuada nunc
       sodales ac.
     </p>
-    <p></p>
   </div>
 </template>
 

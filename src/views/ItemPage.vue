@@ -4,6 +4,7 @@
     <a @click="back" class="btn btn-primary">Retour à la liste</a>
   </div>
   <div v-else class="block">
+        <h2> TO BUILD </h2>
         <a @click="back" class="btn btn-primary">Retour à la liste</a>
     </div>
 </template>

@@ -57,7 +57,7 @@
             "items": {
                 "item1": {
                     "id": "item1",
-                    "title": "Exemple: Echographie 1er Trimestre",
+                    "title": "Exemple : Liens vers un super site",
                     "link": "http://360medics.com",
 
                     "page": false
