@@ -28,24 +28,30 @@
         "entry2": {
             "id": "entry2",
             "title": "Many cool test",
-            "items": [
-                {
+            "items":{
+                "item1": {
                     "id": "test1",
-                    "title": "Awesome Test"
+                    "title": "Awesome Test",
+                    "link": "https://360medics.com/assets/apps/com.AGOF.medics/0.0.1/#/scores/bishop?id=bishop?api_key=5f516e2539b937aa85730037b5a4d70c",
+                    "page": false
                 },
+                "item2":
                 {
                     "id": "test2",
-                    "title": "Super Awesome Test"
+                    "title": "Super Awesome Test",
+                    "link": "https://360medics.com/assets/apps/com.AGOF.medics/0.0.1/#/scores/herman?id=herman?api_key=5f516e2539b937aa85730037b5a4d70c"
                 },
+                "item3":
                 {
                     "id": "test3",
                     "title": "ULTRA Awesome Test"
                 },
+                "item4":
                 {
                     "id": "test4",
                     "title": "OMEGA Awesome Test"
                 }
-            ]
+            }
         },
         "entry3": {
             "id": "entry3",
@@ -55,7 +61,7 @@
                     "id": "item1",
                     "title": "Mon compte rendu opératoire n° 1",
                     "link": false,
-                    "page": "exemple-cro.vue"
+                    "page": "cro/exemple-cro.vue"
                 },
                 "item2": {
                     "id": "item2",
@@ -67,7 +73,7 @@
                     "id": "item3",
                     "title": "Compte Rendu opératoire n°2",
                     "link": false,
-                    "page": "exemple-cro2.vue"
+                    "page": "cro/exemple-cro2.vue"
                 }
             }
         },
@@ -79,7 +85,6 @@
                     "id": "item1",
                     "title": "Exemple : Liens vers un super site",
                     "link": "http://360medics.com",
-
                     "page": false
                 },
                 "item2": {
