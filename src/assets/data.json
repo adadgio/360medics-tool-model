@@ -71,7 +71,7 @@
                 },
                 "item3": {
                     "id": "item3",
-                    "title": "Compte Rendu opératoire n°2",
+                    "title": "Mon compte rendu opératoire n°2",
                     "link": false,
                     "page": "cro/exemple-cro2.vue"
                 }

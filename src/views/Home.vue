@@ -7,6 +7,7 @@
           <router-link style = "cursor:pointer" class="content" tag="div" :to="'/list/' + entry.id">{{
             entry.title
           }}</router-link>
+          
         </div>
       </div>
     </div>
@@ -26,7 +27,7 @@ export default Vue.extend({
   components: {},
   data() {
     return {
-      img1: require("@/assets/help.png"),
+      img1: require("@/assets/picture/help.png"),
     };
   },
   computed: {

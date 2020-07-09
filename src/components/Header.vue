@@ -15,8 +15,8 @@ export default Vue.extend({
   data() {
     return {
       title: null,
-      logo: require('@/assets/logo.jpg')
-    } as any;
+      logo: require('@/assets/picture/logo.jpg')
+    };
   },
   mounted() {
     // hop

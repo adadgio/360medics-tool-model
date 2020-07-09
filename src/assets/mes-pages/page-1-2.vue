@@ -1,17 +1,29 @@
 <template>
   <div>
-    <h1>I'm Title 2</h1>
-    <a href="www.google.com">I'm a link number 2</a>
-    <p>I'm a paragraph number 2</p>
-    <br />
-    <p>
-      Aliquam tristique nibh eget vehicula pretium. In sodales dolor lorem, in
-      euismod nunc varius eu. Vivamus viverra purus eleifend, pretium massa non,
-      ultricies nisl. Nunc mollis at lacus auctor rhoncus. Mauris hendrerit
-      vulputate dui, vel iaculis nisl interdum eget. Aliquam ullamcorper
-      sagittis lorem ac vehicula. Pellentesque consectetur mi non enim commodo
-      luctus. Cras ac interdum dolor, vitae elementum elit. Pellentesque sit
-      amet neque vel odio ornare lacinia at nec lacus.
-    </p>
+    <h1>Mon titre</h1>
+    <div class="card" style="width: 40rem;">
+      <img class="card-img-top" :src="getImg()" alt="Card image cap" />
+      <div class="card-body">
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+          egestas augue, a tempus enim. Pellentesque porttitor risus vitae
+          mauris blandit, vel tristique felis rutrum. Phasellus scelerisque est
+          vitae fermentum commodo. Vestibulum ullamcorper sem justo, sit amet
+          ultricies elit dapibus nec. Vestibulum accumsan bibendum ex. In
+          feugiat tempor diam, non aliquet arcu fermentum nec. Pellentesque
+          laoreet magna ex, non malesuada nunc sodales ac.
+        </p>
+      </div>
+    </div>
   </div>
 </template>
+<script>
+export default {
+  // veuillez spécifier le chemin de l'image dans la fonction ci-dessous :
+  methods: {
+    getImg() {
+      return require("../picture/1erT.png");
+    },
+  },
+};
+</script>
