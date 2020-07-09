@@ -42,7 +42,7 @@ Cette application est personalisable, cette partie de la documentation vise à e
     cd src/assets
 
     ```
-    Ouvrez le fichier data.json :
+    Ouvrez le fichier data.json 
 
     {
     "header": {
