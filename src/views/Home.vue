@@ -1,13 +1,17 @@
 <template>
   <div class="home">
+    <Header />
     <h3>Votre titre</h3>
     <div class="but-container">
       <div class="row">
         <div v-for="entry in entries" :key="entry.id" class="col-sm-6">
-          <router-link style = "cursor:pointer" class="content" tag="div" :to="'/list/' + entry.id">{{
-            entry.title
-          }}</router-link>
-          
+          <router-link
+            style="cursor:pointer"
+            class="content"
+            tag="div"
+            :to="'/list/' + entry.id"
+            >{{ entry.title }}</router-link
+          >
         </div>
       </div>
     </div>
@@ -21,10 +25,11 @@
 <script lang="ts">
 import Vue from "vue";
 import { JsonImport } from "@/service/json-import";
+import Header from "@/components/Header.vue";
 
 export default Vue.extend({
   name: "Home",
-  components: {},
+  components: { Header },
   data() {
     return {
       img1: require("@/assets/picture/help.png"),
@@ -53,7 +58,7 @@ a {
   background: rgb(201, 100, 128);
   margin: 5px 0px 5px 0px;
   color: white;
-  border-radius: .5em;
+  border-radius: 0.5em;
   text-transform: uppercase;
 }
 html,
@@ -64,7 +69,4 @@ h3 {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-/* .rowCont {
-  grid-auto-rows: 10%;
-} */
 </style>

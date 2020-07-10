@@ -56,8 +56,8 @@
       <span class="result">
         Indice de masse corporelle (IMC) : {{ interpretation }} <br
       /></span>
-        </div>
-      </div>
+    </div>
+  </div>
 </template>
 <script lang="ts">
 import Vue from "vue";
