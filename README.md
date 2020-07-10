@@ -3,7 +3,16 @@
 360medics-tool-model est une application personnalisable pour les soignants via la plateforme 360 medics.
 Cet outil permet aux utilisateurs de créer leur propre application à partir d'un template de base.
 
-## Prérequis et installation
+- ## Table des matières
+    - [Prérequis et installation](#prérequis-et-installation)
+    - [Lancer l'application](#lancer-lapplication)
+    - [Utilisation de l'application :](#utilisation-de-lapplication-)
+      - [1 - Fichier data.json :](#--fichier-datajson-)
+      - [2 - Créer vos propres pages :](2---créer-vos-propres-pages)
+
+
+
+### Prérequis et installation
 Afin de pouvoir utiliser cette application , il est nécessaire d'installer préalablement les éléments suivants :
 - Node version v12.16.3 ou supérieur.
 - Npm (version 6.14.4 ou supérieur) OU Yarn (version 1.22.4 ou supérieur)
@@ -96,8 +105,10 @@ Pour cela, à partir de la racine de l'application, aller dans __src__ , __asset
 cd src/assets/mes-pages 
 ```
 
-Créer un fichier __monNouveauFichier.vue__ , puis écrivez votre code HTML dans une balise __template__ :  ```
-<template> votre code HTML </template> ```
+Créer un fichier __monNouveauFichier.vue__ , puis écrivez votre code HTML dans une balise __template__ : 
+```
+<template> votre code HTML </template> 
+```
 
 Une fois votre code terminé, rendez-vous dans le fichier __data.json__ .
 
