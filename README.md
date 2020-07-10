@@ -1,19 +1,15 @@
-# 360medics-tool-model - 360 Medics - EN CONSTRUCTION
+# 360medics-tool-model - 360 Medics 
 
-DESCRIPTION 
+360medics-tool-model est une application personnalisable pour les soignants via la plateforme 360 medics.
+Cet outil permet aux utilisateurs de créer leur propre application à partir d'un template de base.
+
 ## Prérequis et installation
-
 Afin de pouvoir utiliser cette application , il est nécessaire d'installer préalablement les éléments suivants :
-
 - Node version v12.16.3 ou supérieur.
-
 - Npm (version 6.14.4 ou supérieur) OU Yarn (version 1.22.4 ou supérieur)
-
 Installation de l'application :
-
-- 1 - Cloner le repertoire.
-
-* 2 - Installer les dépendances coté client
+- 1 - Cloner le répertoire.
+* 2 - Installer les dépendances.
 
 ```
 $ cd 360medics-tool-model
@@ -23,7 +19,7 @@ $ npm install OU yarn install
 
 ### Lancer l'application
 
-- 1 - Lancer le server
+- 1 - Lancer le serveur
 
 ```
 $ cd 360medics-tool-model
@@ -36,22 +32,19 @@ $ yarn serve OU npm start
 
 ### Utilisation de l'application :
 
-Cette application est personalisable, cette partie de la documentation vise à expliquer la marche à suivre afin de pouvoir personaliser le contenu.
+Cette application est personnalisable, cette partie de la documentation vise à expliquer la marche à suivre afin de pouvoir personnaliser le contenu.
 
-#### 1 - Fichier data.json :
+#### - Fichier data.json :
 
 Dans la racine du projet, ouvrir le fichier _src_ puis _assets_ ou directement par ligne de commande :
-
 ```
-cd src/assets
-
+cd src/assets 
 ```
+Ouvrez le fichier data.json.
 
-Ouvrez le fichier data.json,
+Le fichier data.json est en quelque sorte votre base de données, c'est ici que vous trouverez les titres des catégories, les liens vers des sites externes à l'application, mais également ceux vers vos propres pages.
 
-Le fichier data.json est en quelque sorte votre base de donnée, c'est ici que vous trouverez les titres des catégories, les liens vers des sites externes à l'application mais également ceux vers vos propres pages.
-
-Afin d'illustrer, nous allons changer le nom d'une catégorie ainsi que son lien, prenon par exemple la partie suivantes situé à la ligne n°80 du fichier data.json :
+Afin d'illustrer, nous allons changer le nom d'une catégorie ainsi que son lien, prenons par exemple la partie suivante située à la ligne n°80 du fichier data.json :
 
 ```
 {
@@ -81,8 +74,7 @@ Afin d'illustrer, nous allons changer le nom d'une catégorie ainsi que son lien
 }
 ```
 
-Nous souhaitons changer le bouton "Imagerie médical" , il suffit de modifié la ligne suivante :
-
+Nous souhaitons changer le bouton "Imagerie médicale" , il suffit de modifier la ligne suivante :
 ```
 "title": "Imagerie médicale",
 ```
@@ -99,27 +91,23 @@ Le titre sera ainsi modifié.
 #### 2 - Créer vos propres pages.
 
 Il est possible de créer vos propres pages.
-
-Pour cela, à partir de la racine de l'application, aller dans __src__ , __assets__ puis __mes-pages__ 
-
+Pour cela, à partir de la racine de l'application, aller dans __src__ , __assets__ puis __mes-pages__  
 ```
-cd src/assets/mes-pages
+cd src/assets/mes-pages 
 ```
-3 templates vous sont proposés, vous pouvez les modifier ou créer une nouvelle page.
 
-
-Créer un fichier __monNouveauFichier.vue__ , puis écriver votre code html dans une balise __template__ : 
-```
-<template> votre code HTML </template>
-```
+Créer un fichier __monNouveauFichier.vue__ , puis écrivez votre code HTML dans une balise __template__ :  ```
+<template> votre code HTML </template> ```
 
 Une fois votre code terminé, rendez-vous dans le fichier __data.json__ .
 
-Il faut maintenant ajouté ce nouveau fichier au fichier, par exemple :
-Nous avons ajouté un élément dans la liste "Score Obstétrique",  nous devons renseigner deux éléments afin que la page soit correctement incorporer à l'application :  
+Il faut maintenant ajouter ce nouveau fichier au fichier, par exemple :
+
+Nous avons ajouté un élément dans la liste "Score obstétrique",  nous devons renseigner deux éléments afin que la page soit correctement incorporée à l'application :  
 
 * Renseigner le titre ("title") de mon nouveau fichier, afin qu'il apparaisse dans la liste.
-* Renseinger le nom de la page ("page") afin que l'application sachent quelle fichier charger.
+
+* Renseigner le nom de la page ("page") afin que l'application sache quel fichier charger.
 
 Pour notre exemple, nous modifierons le fichier comme ceci : 
 
@@ -149,7 +137,15 @@ Votre nouvelle page devrait maintenant être affichable en cliquant sur "Score e
 
 Vous pouvez également ranger vos pages par dossier, comme c'est le cas pour le dossier __cro__ situé dans __mes-pages__.
 
-Dans ce cas il est nécessaire d'indiqué dans "page" le dossier : 
+Dans ce cas il est nécessaire d'indiquer dans "page" le dossier : 
 ```
 "page" : "nouveauDossier/monNouveauFichier.vue"
 ```
+
+Des templates de base sont à votre disposition avec 3 pages qui propose respectivement : 
+
+* Une page d'affichage de texte simple.
+* Une page d'affichage d'une image avec une description.
+* Une page contenant une fonction simple pour réaliser un test : l'exemple propose un test d'IMC.
+
+
