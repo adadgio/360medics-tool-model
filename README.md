@@ -9,13 +9,16 @@ Cet outil permet aux utilisateurs de créer leur propre application à partir d'
     - [Utilisation de l'application :](#utilisation-de-lapplication-)
       - [1 - Fichier data.json :](#--fichier-datajson-)
       - [2 - Créer vos propres pages :](2---créer-vos-propres-pages)
+      - [3 - Mise en ligne de votre application :](3---mise-en-ligne-de-votre-application)
 
 
 
 ### Prérequis et installation
 Afin de pouvoir utiliser cette application , il est nécessaire d'installer préalablement les éléments suivants :
-- Node version v12.16.3 ou supérieur.
-- Npm (version 6.14.4 ou supérieur) OU Yarn (version 1.22.4 ou supérieur)
+- Node version v12.16.3 ou supérieur : vous pouvez suivre un tutoriel d'aide à l'installation en cliquant [ici](https://openclassrooms.com/fr/courses/1056721-des-applications-ultra-rapides-avec-node-js/1056956-installer-node-js)
+- Npm (version 6.14.4 ou supérieur) OU Yarn (version 1.22.4 ou supérieur), l'installation de npm est réalisé en même temps que celle de NodeJS.
+
+
 Installation de l'application :
 - 1 - Cloner le répertoire.
 * 2 - Installer les dépendances.
@@ -160,3 +163,15 @@ Des templates de base sont à votre disposition avec 3 pages qui propose respect
 * Une page contenant une fonction simple pour réaliser un test : l'exemple propose un test d'IMC.
 
 
+#### 3 - Mise en ligne de votre application.
+
+Une fois votre application terminée et afin qu'elle soit intégré à 360 Medics, merci de suivre la procédure suivante : 
+* En ligne de commande dans la console, taper l'instruction suivante :
+```
+npm run build
+```
+Un fichier nommé "Dist" est apparu dans le dossier de l'application.
+
+* Créer une archive/compresser de ce dossier, et envoyé le nous par mail en spécifiant votre spécialité médical.
+
+* Elle sera mise en ligne rapidement, et vous pourrez la retrouver dans l'onglet "Tools" de l'application.
