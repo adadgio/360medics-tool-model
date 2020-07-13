@@ -164,13 +164,15 @@ Des templates de base sont à votre disposition avec 3 pages qui propose respect
 
 #### 3 - Mise en ligne de votre application.
 
-Une fois votre application terminée et afin qu'elle soit intégré à 360 Medics, merci de suivre la procédure suivante : 
+Une fois votre application terminée, il faut maintenant qu'elle soit intégrée à 360 Medics ! 
+Merci de suivre la procédure suivante : 
+
 * En ligne de commande dans la console, taper l'instruction suivante :
 ```
 npm run build
 ```
 Un fichier nommé "Dist" est apparu dans le dossier de l'application.
 
-* Créer une archive/compresser de ce dossier, et envoyé le nous par mail en spécifiant votre spécialité médical.
+* Créer une archive/compresser de ce dossier, et envoyé le nous par mail en spécifiant votre spécialité médicale.
 
 * Elle sera mise en ligne rapidement, et vous pourrez la retrouver dans l'onglet "Tools" de l'application.
