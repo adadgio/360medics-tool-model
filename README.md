@@ -8,7 +8,7 @@ Cet outil permet aux utilisateurs de créer leur propre application à partir d'
     - [Lancer l'application](#lancer-lapplication)
     - [Utilisation de l'application :](#utilisation-de-lapplication-)
       - [1 - Fichier data.json :](#--fichier-datajson-)
-      - [2 - Créer vos propres pages :](#--créer-vos-propres-pages-)
+      - [2 - Créer vos propres pages.](#2---creer-vos-propres-pages)
       - [3 - Mise en ligne de votre application.](#3---mise-en-ligne-de-votre-application)
 
 
@@ -99,7 +99,7 @@ par :
 Le titre sera ainsi modifié.
 
 
-#### 2 - Créer vos propres pages.
+#### 2 - Creer vos propres pages.
 
 Il est possible de créer vos propres pages.
 Pour cela, à partir de la racine de l'application, aller dans __src__ , __assets__ puis __mes-pages__  
