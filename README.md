@@ -2,6 +2,7 @@
 
 360medics-tool-model est une application personnalisable pour les soignants via la plateforme 360 medics.
 Cet outil permet aux utilisateurs de créer leur propre application à partir d'un template de base.
+Cette application sera ensuite mise en ligne sur notre application native et disponible dans l'onglet "Tools"
 
 - ## Table des matières
     - [Prérequis et installation](#prérequis-et-installation)
