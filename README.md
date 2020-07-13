@@ -8,9 +8,8 @@ Cet outil permet aux utilisateurs de créer leur propre application à partir d'
     - [Lancer l'application](#lancer-lapplication)
     - [Utilisation de l'application :](#utilisation-de-lapplication-)
       - [1 - Fichier data.json :](#--fichier-datajson-)
-      - [2 - Créer vos propres pages :](2---créer-vos-propres-pages)
-      - [3 - Mise en ligne de votre application :](3---mise-en-ligne-de-votre-application)
-
+      - [2 - Créer vos propres pages :](#--créer-vos-propres-pages-)
+      - [3 - Mise en ligne de votre application.](#3---mise-en-ligne-de-votre-application)
 
 
 ### Prérequis et installation
