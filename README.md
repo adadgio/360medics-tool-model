@@ -16,7 +16,7 @@ Cette application sera ensuite mise en ligne sur notre application native et dis
 ### Prérequis et installation
 Afin de pouvoir utiliser cette application , il est nécessaire d'installer préalablement les éléments suivants :
 - Node version v12.16.3 ou supérieur : vous pouvez suivre un tutoriel d'aide à l'installation en cliquant [ici](https://openclassrooms.com/fr/courses/1056721-des-applications-ultra-rapides-avec-node-js/1056956-installer-node-js)
-- Npm (version 6.14.4 ou supérieur) OU Yarn (version 1.22.4 ou supérieur), l'installation de npm est réalisé en même temps que celle de NodeJS.
+- Npm version 6.14.4 ou supérieur : l'installation de npm est réalisé en même temps que celle de NodeJS.
 
 
 Installation de l'application :
@@ -26,7 +26,7 @@ Installation de l'application :
 ```
 $ cd 360medics-tool-model
 
-$ npm install OU yarn install
+$ npm install
 ```
 
 ### Lancer l'application
@@ -36,7 +36,7 @@ $ npm install OU yarn install
 ```
 $ cd 360medics-tool-model
 
-$ yarn serve OU npm start
+$ npm start
 
 ```
 
